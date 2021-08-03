@@ -55,20 +55,13 @@ import {
 
 				});
 			}).catch(err => {
-				throw new Error(err);
+				res.status(500).send("Sorry, we couldn't process your image");
 			});
 		} catch (err) {
 			res.status(400).send(err);
 		}
 	});
 
-
-
-
-
-	/**************************************************************************** */
-
-	//! END @TODO1
 
 	// Root Endpoint
 	// Displays a simple message to the user
